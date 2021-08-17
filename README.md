@@ -1,33 +1,14 @@
-# typescript-lambda
+# cloudwatch-log-destination
 
-[![CI Workflow](https://github.com/previewme/lambda-typescript/actions/workflows/ci.yml/badge.svg)](https://github.com/previewme/lambda-typescript/actions/workflows/ci.yml)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=previewme_lambda-typescript&metric=coverage)](https://sonarcloud.io/dashboard?id=previewme_lambda-typescript)
-[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=previewme_lambda-typescript&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=previewme_lambda-typescript)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=previewme_lambda-typescript&metric=alert_status)](https://sonarcloud.io/dashboard?id=previewme_lambda-typescript)
+[![CI Workflow](https://github.com/previewme/cloudwatch-log-destination/actions/workflows/ci.yml/badge.svg)](https://github.com/previewme/cloudwatch-log-destination/actions/workflows/ci.yml)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=previewme_cloudwatch-log-destination&metric=coverage)](https://sonarcloud.io/dashboard?id=previewme_cloudwatch-log-destination)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=previewme_cloudwatch-log-destination&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=previewme_cloudwatch-log-destination)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=previewme_cloudwatch-log-destination&metric=alert_status)](https://sonarcloud.io/dashboard?id=previewme_cloudwatch-log-destination)
 
-This is a template repository for creating typescript lambda projects.
 
-After cloning this template, the following steps need to be carried out:
+Lambda function which automatically sets a destination for all newly created Cloudwatch Log groups. If the destination is changed then the lambda function will reset back to the correct one.
 
-1. Add the project to sonarcloud.
-2. The following files need to be modified to suit your project.
-3. Update the sonarcloud badges
-
-### package.json
-
-* name
-* version
-* repository  
-* description
-* license
-
-### sonar-project.properties
-
-* sonar.projectKey
-* sonar.links.homepage
-* sonar.links.ci
-* sonar.links.scm
-* sonar.links.issue
+This allows us to centralise all of our logs into a single account.
 
 ## Build
 
