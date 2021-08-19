@@ -5,10 +5,17 @@
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=previewme_cloudwatch-log-destination&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=previewme_cloudwatch-log-destination)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=previewme_cloudwatch-log-destination&metric=alert_status)](https://sonarcloud.io/dashboard?id=previewme_cloudwatch-log-destination)
 
-
-Lambda function which automatically sets a destination for all newly created Cloudwatch Log groups. If the destination is changed then the lambda function will reset back to the correct one.
+Lambda function which automatically sets a destination for all newly created Cloudwatch Log groups. When a subscription filter is modified or deleted, the function will add back the expected subscription filter. In the case there are two subscription filters already, the last one is deleted.
 
 This allows us to centralise all of our logs into a single account.
+
+## Configuration
+
+### Environment variables
+
+| Environment Variable | Description | Required |
+| --- | --- | --- |
+| DESTINATION_ARN | The destination arn where the logs will be sent | Yes |
 
 ## Build
 

@@ -1,0 +1,53 @@
+{
+  "version": "0",
+  "id": "7976751f-16f4-5735-6907-a2456c8758e0",
+  "detail-type": "AWS API Call via CloudTrail",
+  "source": "aws.logs",
+  "account": "789639879501",
+  "time": "2021-08-18T01:04:02Z",
+  "region": "ap-southeast-2",
+  "resources": [],
+  "detail": {
+    "eventVersion": "1.08",
+    "userIdentity": {
+      "type": "AssumedRole",
+      "principalId": "AROA3PWRULNG6J4TS6D6R:bhavik@previewme.co",
+      "arn": "arn:aws:sts::789639879501:assumed-role/AWSReservedSSO_AWSAdministratorAccess_5c1077da22fe6dbc/bhavik@previewme.co",
+      "accountId": "789639879501",
+      "accessKeyId": "ASIA3PWRULNG65IQBNHQ",
+      "sessionContext": {
+        "sessionIssuer": {
+          "type": "Role",
+          "principalId": "AROA3PWRULNG6J4TS6D6R",
+          "arn": "arn:aws:iam::789639879501:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AWSAdministratorAccess_5c1077da22fe6dbc",
+          "accountId": "789639879501",
+          "userName": "AWSReservedSSO_AWSAdministratorAccess_5c1077da22fe6dbc"
+        },
+        "webIdFederationData": {},
+        "attributes": {
+          "creationDate": "2021-08-18T00:35:31Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "eventTime": "2021-08-18T01:04:02Z",
+    "eventSource": "logs.amazonaws.com",
+    "eventName": "CreateLogGroup",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "210.54.32.227",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:91.0) Gecko/20100101 Firefox/91.0",
+    "requestParameters": {
+      "logGroupName": "bhavik-test-log"
+    },
+    "responseElements": null,
+    "requestID": "c653d2de-e469-4400-b6ec-292cec081c14",
+    "eventID": "31cead06-3fc8-4e33-9532-8045b3e27019",
+    "readOnly": false,
+    "eventType": "AwsApiCall",
+    "apiVersion": "20140328",
+    "managementEvent": true,
+    "recipientAccountId": "789639879501",
+    "eventCategory": "Management",
+    "sessionCredentialFromConsole": "true"
+  }
+}
