@@ -44,18 +44,6 @@ describe('Cloudwatch Logs have subscription filter correctly set', () => {
         process.env = OLD_ENV;
     });
 
-    // test('Destination ARN returned when environment variable set', () => {
-    //     const destinationArn = 'arn:jest-test';
-    //     process.env.DESTINATION_ARN = destinationArn;
-    //
-    //     const actual = getDefaultDestinationArn();
-    //     expect(actual).toEqual(destinationArn);
-    // });
-    //
-    // test('Error thrown when destination ARN environment variable not set', () => {
-    //     expect(() => getDefaultDestinationArn()).toThrowError('DESTINATION_ARN not set in configuration');
-    // });
-
     test('Empty array whe no subscription filters exist', async () => {
         delete process.env.DESTINATION_ARN;
         await expect(handler(createLogGroup)).rejects.toThrowError('DESTINATION_ARN not set in configuration');
